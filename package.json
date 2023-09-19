@@ -1,0 +1,20 @@
+{
+  "name": "proyectositioventatickets",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000V\u0000e\u0000n\u0000t\u0000a\u0000T\u0000i\u0000c\u0000k\u0000e\u0000t\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.html",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzCazador/VentaTickets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzCazador/VentaTickets/issues"
+  },
+  "homepage": "https://github.com/dzCazador/VentaTickets#readme"
+}
