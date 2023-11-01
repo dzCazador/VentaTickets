@@ -6,9 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentaTickets.com.ar</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script>
+        // Definir la clase Evento
+        class Evento {
+            constructor(nombre, descripcion, precio,imagen) {
+                this.nombre = nombre;
+                this.descripcion = descripcion;
+                this.precio = precio,
+                this.imagen = imagen;
+            }
+        }
+
+        // Definir la clase Recital que hereda de Evento
+        class Recital extends Evento {
+            constructor(nombre, descripcion, precio, imagen,banda) {
+                super(nombre, descripcion, precio,imagen);
+                this.banda = banda;
+            }
+        }
+        class Cine extends Evento {
+            constructor(nombre, descripcion, precio, imagen,duracion) {
+                super(nombre, descripcion, precio,imagen);
+                this.duracion = duracion;
+            }
+        }
+        class Teatro extends Evento {
+            constructor(nombre, descripcion, precio, imagen,autor) {
+                super(nombre, descripcion, precio,imagen);
+                this.autor = autor;
+            }
+        }
+        
+        // Arreglo de objetos para almacenar los Eventos
+        const eventos = [];
+        // Función para cargar los datos del archivo JSON y crear objetos Recital
+        function cargarEventos() {
+            fetch('eventos.json')
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach(eventoData => {
+                        if (eventoData.tipo === 'Recital') {
+                            const recital = new Recital(eventoData.nombre, eventoData.descripcion, eventoData.precio, eventoData.imagen, eventoData.banda);
+                            eventos.push(recital);
+                        } else if (eventoData.tipo === 'Cine') {
+                            const cine = new Cine(eventoData.nombre, eventoData.descripcion, eventoData.precio, eventoData.imagen, eventoData.duracion);
+                            eventos.push(cine);
+                        } else if (eventoData.tipo === 'Teatro') {
+                            const teatro = new Teatro(eventoData.nombre, eventoData.descripcion, eventoData.precio, eventoData.imagen, eventoData.autor);
+                            eventos.push(teatro);
+                        }
+                    });
+
+                })
+                .catch(error => console.error('Error al cargar el archivo JSON:', error));
+        }        
+
+        // Función para mostrar los recitales en pantalla
+        function mostrarRecitales() {
+            const recitalesContainer = document.getElementById('recitales-container');
+            
+            eventos.forEach(recital => {
+                
+                const recitalElement = document.createElement('div');
+                recital.className = 'container-card';
+                recitalElement.innerHTML = `
+                    <div class="card">
+                    <figure><img src="images/${recital.imagen}"></figure>
+                    <div class='contenido-card'>
+                    <h3>${recital.nombre}</h3>
+                    <p>${recital.descripcion}</p>
+                    <p>Precio: Desde $${recital.precio}</p>
+                    <p>Banda: ${recital.banda}</p> 
+                    </div>
+                    </div>
+                `;
+            recitalesContainer.appendChild(recitalElement);
+            });
+        }
+
+    cargarEventos() ;
+
+    </script>
 
 </head>
-<body>
+<body onload="mostrarRecitales();">
     <header class="header">
         <iframe src="encabezado.html" frameborder="0" scrolling="no" width="100%" height="60"></iframe>
     </header>
@@ -16,45 +97,10 @@
         <div class="title-cards">
             <h2>Recitales</h2>
         </div>
-        <div class="container-card">
-            <div class="card">
-            <figure>
-                <img src="images/metallica.avif">
-            </figure>
-            <div class="contenido-card">
-                <h3>Metallica</h3>
-                <p>Metallica es una banda legendaria de heavy metal fundada en 1981 en Los Ángeles, California. Su música potente y letras impactantes los han convertido en íconos del género.</p>
-                <a href="#">Comprar</a>
-                <div class="precio">Desde $25.000</div>
-            </div>
-            </div>
-            <div class="card">
-            <figure>
-                <img src="images/iron-maiden.jpg">
-            </figure>
-            <div class="contenido-card">
-                <h3>Iron Maiden</h3>
-                <p>Iron Maiden es una influyente banda británica de heavy metal formada en 1975. Con su mascota, Eddie, y éxitos como "The Trooper" y "Run to the Hills," son una de las bandas más emblemáticas del género. </p>
-                <a href="#">Comprar</a>
-                <div class="precio">Desde $22.000</div>
-            </div>
-            </div>
-            <div class="card">
-            <figure>
-                <img src="images/avantasia.jfif">
-            </figure>
-            <div class="contenido-card">
-                <h3>Avantasia</h3>
-                <p>Avantasia es un proyecto musical de metal sinfónico creado por Tobias Sammet, el vocalista y líder de la banda de power metal Edguy. Avantasia se destaca por su estilo épico y sus álbumes conceptuales que presentan una variedad de vocalistas invitados de renombre en la escena del metal.</p>
-                <a href="#">Comprar</a>
-                <div class="precio">Desde $18.000</div>
-            </div>
-            
-         
+        <div id="recitales-container" class="container-card"></div>
+        
 
-        </div>
 <!--Fin   Tarjetas-->
-
-
 </body>
 </html>
+ 
