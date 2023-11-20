@@ -6,35 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentaTickets.com.ar</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script languaje="javascript" src="js/clases.js"></script>
+    <script languaje="javascript" src="js/utils.js"></script>
 
 </head>
-<body>
+<body onload="mostrarEvento('Teatro');">
     <header class="header">
         <iframe src="encabezado.html" frameborder="0" scrolling="no" width="100%" height="60"></iframe>
     </header>
     	<!--   Tarjetas-->
         <div class="title-cards">
-            <h2>Recitales</h2>
+            <h2>Teatro</h2>
         </div>
-        <div class="container-card">
-            <div class="card">
-            <figure>
-                <img src="images/inmaduros.png">
-            </figure>
-            <div class="contenido-card">
-                <h3>Inmaduros</h3>
-                <p>Inmaduros es una obra originalmente creada por Juan Vera y Daniel Cúparo, que presenta en un impecable tono de comedia a dos amigos de toda la vida: un publicista y un psiquiatra. Dos personas muy diferentes que se juntan para afrontar una separación. Es una obra ideal para reirse un rato, pero también para reflexionar un poco en las nuevas maneras que tenemos de relacionarnos con los demás y con nosotros mismos.</p>
-                <a href="#">Comprar</a>
-                <div class="precio">Desde $25.000</div>
-            </div>
-            </div>
-            
-            
-         
+        <div id="recitales-container" class="container-card"></div>
+        
 
-        </div>
-<!--Fin   Tarjetas-->
-
-
+        <!--Fin   Tarjetas-->
 </body>
 </html>
+ 

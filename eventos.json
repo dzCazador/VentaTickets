@@ -27,14 +27,18 @@
     "tipo": "Cine",
     "nombre": "Avengers: Endgame",
     "descripcion": "Película de superhéroes dirigida por los hermanos Russo...",
-    "precio": 120,
-    "director": "Hermanos Russo"
+    "precio": 5000,
+    "director": "Hermanos Russo",
+    "imagen":"avengers.jpg",
+    "duracion":"2 horas 31 minutos"
+
   },
   {
     "tipo": "Teatro",
-    "nombre": "El Rey Lear",
+    "nombre": "El Rey Leon",
     "descripcion": "Obra de teatro escrita por William Shakespeare...",
-    "precio": 350,
-    "autor": "William Shakespeare"
+    "precio": 3500,
+    "autor": "William Shakespeare",
+    "imagen":"reyleon.jpg"
   }
 ]
