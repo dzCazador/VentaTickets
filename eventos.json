@@ -26,7 +26,7 @@
   {
     "tipo": "Cine",
     "nombre": "Avengers: Endgame",
-    "descripcion": "Película de superhéroes dirigida por los hermanos Russo...",
+    "descripcion": "Avengers: Endgame es una épica película de superhéroes que cierra el capítulo final de la saga del Universo Cinematográfico de Marvel. Dirigida por los hermanos Russo, la película sigue a los héroes sobrevivientes después de los devastadores eventos de Infinity War.",
     "precio": 5000,
     "director": "Hermanos Russo",
     "imagen":"avengers.jpg",

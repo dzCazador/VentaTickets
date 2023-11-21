@@ -5,14 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentaTickets.com.ar</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css"/>
-
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
         <iframe src="encabezado.html" frameborder="0" scrolling="no" width="100%" height="60"></iframe>
     </header>
 
+    <a class="btn" href="#" style="position:absolute;top: 50%;left: 50%;">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Login" >
+            Ingres&aacute;
+        </button>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade wrapper " id="Login" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Ingrese a VentaTicket</h4>
+        </div>
+        <div class="modal-body">
+            <form>
+                <input type="text" id="login" class="fadeIn second" name="Usuario" placeholder="Usuario">
+                <input type="text" id="password" class="fadeIn third" name="Password" placeholder="Password">
+                <input type="submit" class="fadeIn btn btn-primary btn-lg fourth" value="Ingresar" onclick="">
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-danger" data-dismiss="modal">Salir</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
