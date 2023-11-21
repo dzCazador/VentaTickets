@@ -1,5 +1,5 @@
 [
-  {
+ {
     "tipo": "Recital",
     "nombre": "Metallica",
     "descripcion": "Metallica es una banda legendaria de heavy metal fundada en 1981 en Los Ángeles, California. Su música potente y letras impactantes los han convertido en íconos del género.",
@@ -40,5 +40,239 @@
     "precio": 3500,
     "autor": "William Shakespeare",
     "imagen":"reyleon.jpg"
+  },
+
+  {
+    "tipo": "Recital",
+    "nombre": "Slayer",
+    "descripcion": "Slayer fue una banda estadounidense de thrash metal fundada en 1981. Conocidos por su música rápida y letras agresivas, son una de las bandas más influyentes del género.",
+    "precio": 18000,
+    "banda": "Slayer",
+    "imagen": "slayer.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Nightwish",
+    "descripcion": "Nightwish es una banda finlandesa de metal sinfónico. Destacan por la combinación de voces líricas y potentes, así como por sus letras inspiradas en la fantasía.",
+    "precio": 22000,
+    "banda": "Nightwish",
+    "imagen": "nightwish.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Rammstein",
+    "descripcion": "Rammstein es una banda alemana de metal industrial conocida por su estilo teatral en vivo y letras provocativas. Han ganado reconocimiento internacional por su música única.",
+    "precio": 25000,
+    "banda": "Rammstein",
+    "imagen": "rammstein.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Guns N' Roses",
+    "descripcion": "Guns N' Roses es una banda estadounidense de hard rock formada en 1985. Con éxitos como Sweet Child o' Mine, han dejado una huella duradera en la escena del rock.",
+    "precio": 20000,
+    "banda": "Guns N' Roses",
+    "imagen": "gunsnroses.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Dream Theater",
+    "descripcion": "Dream Theater es una banda estadounidense de metal progresivo. Con habilidades técnicas excepcionales, han sido pioneros en el género desde su formación en 1985.",
+    "precio": 23000,
+    "banda": "Dream Theater",
+    "imagen": "dreamtheater.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Epica",
+    "descripcion": "Epica es una banda neerlandesa de metal sinfónico. Su música combina elementos de metal y música clásica, creando una experiencia única para los oyentes.",
+    "precio": 19000,
+    "banda": "Epica",
+    "imagen": "epica.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Opeth",
+    "descripcion": "Opeth es una banda sueca de metal progresivo y death metal melódico. Con letras introspectivas y composiciones complejas, han ganado reconocimiento por su originalidad.",
+    "precio": 21000,
+    "banda": "Opeth",
+    "imagen": "opeth.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Sabaton",
+    "descripcion": "Sabaton es una banda sueca de power metal. Sus letras se centran en eventos históricos y batallas, creando una experiencia única para los fanáticos de la historia.",
+    "precio": 20000,
+    "banda": "Sabaton",
+    "imagen": "sabaton.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Within Temptation",
+    "descripcion": "Within Temptation es una banda neerlandesa de metal sinfónico. Con la voz distintiva de Sharon den Adel, han ganado popularidad internacional desde su formación en 1996.",
+    "precio": 21000,
+    "banda": "Within Temptation",
+    "imagen": "withintemptation.jpg"
+  },
+  {
+    "tipo": "Recital",
+    "nombre": "Anthrax",
+    "descripcion": "Anthrax es una banda estadounidense de thrash metal. Junto con otras bandas del 'Big Four' del thrash, han dejado una marca indeleble en la historia del metal.",
+    "precio": 19000,
+    "banda": "Anthrax",
+    "imagen": "anthrax.jpg"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "The Shawshank Redemption",
+    "descripcion": "The Shawshank Redemption es una película dramática basada en el relato de Stephen King. Narra la historia de la amistad entre dos prisioneros en la penitenciaría de Shawshank.",
+    "precio": 7000,
+    "director": "Frank Darabont",
+    "imagen": "shawshankredemption.jpg",
+    "duracion": "2 horas 22 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "The Dark Knight",
+    "descripcion": "The Dark Knight es una película de superhéroes dirigida por Christopher Nolan. Destaca la actuación de Heath Ledger como el Joker y ha sido aclamada como una de las mejores películas de superhéroes.",
+    "precio": 8000,
+    "director": "Christopher Nolan",
+    "imagen": "thedarkknight.jpg",
+    "duracion": "2 horas 32 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "Pulp Fiction",
+    "descripcion": "Pulp Fiction es una película de Quentin Tarantino que entrelaza varias historias. Con un elenco estelar, se ha convertido en un clásico del cine contemporáneo.",
+    "precio": 7500,
+    "director": "Quentin Tarantino",
+    "imagen": "pulpfiction.jpg",
+    "duracion": "2 horas 34 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "Interstellar",
+    "descripcion": "Interstellar es una película de ciencia ficción dirigida por Christopher Nolan. Explora temas de viajes en el espacio, agujeros de gusano y la supervivencia de la humanidad.",
+    "precio": 9000,
+    "director": "Christopher Nolan",
+    "imagen": "interstellar.jpg",
+    "duracion": "2 horas 49 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "The Godfather",
+    "descripcion": "The Godfather es una película de crimen dirigida por Francis Ford Coppola. Basada en la novela de Mario Puzo, sigue la historia de la familia mafiosa Corleone.",
+    "precio": 8500,
+    "director": "Francis Ford Coppola",
+    "imagen": "thegodfather.jpg",
+    "duracion": "2 horas 55 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "The Matrix",
+    "descripcion": "The Matrix es una película de ciencia ficción escrita y dirigida por las hermanas Wachowski. Con innovadores efectos visuales, ha influido en el género de la ciencia ficción.",
+    "precio": 8000,
+    "directores": "Hermanas Wachowski",
+    "imagen": "thematrix.jpg",
+    "duracion": "2 horas 16 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "Fight Club",
+    "descripcion": "Fight Club es una película dirigida por David Fincher, basada en la novela de Chuck Palahniuk. Explora temas de la identidad y la rebelión contra la sociedad consumista.",
+    "precio": 7500,
+    "director": "David Fincher",
+    "imagen": "fightclub.jpg",
+    "duracion": "2 horas 19 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "Forrest Gump",
+    "descripcion": "Forrest Gump es una película dirigida por Robert Zemeckis. Narra la vida de Forrest, un hombre con habilidades limitadas pero una perspectiva única de la vida.",
+    "precio": 8500,
+    "director": "Robert Zemeckis",
+    "imagen": "forrestgump.jpg",
+    "duracion": "2 horas 22 minutos"
+  },
+  {
+    "tipo": "Cine",
+    "nombre": "Schindler's List",
+    "descripcion": "Schindler's List es una película dirigida por Steven Spielberg que narra la historia de Oskar Schindler, un empresario que salva a judíos durante el Holocausto.",
+    "precio": 9000,
+    "director": "Steven Spielberg",
+    "imagen": "schindlerslist.jpg",
+    "duracion": "3 horas 15 minutos"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Romeo y Julieta",
+    "descripcion": "Romeo y Julieta es una tragedia escrita por William Shakespeare. La historia de amor prohibido entre los jóvenes de Verona ha perdurado a lo largo de los siglos.",
+    "precio": 5000,
+    "autor": "William Shakespeare",
+    "imagen": "romeoyjulieta.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Hamlet",
+    "descripcion": "Hamlet es una tragedia de William Shakespeare que sigue la historia del príncipe Hamlet de Dinamarca. Explora temas de venganza, locura y corrupción.",
+    "precio": 4500,
+    "autor": "William Shakespeare",
+    "imagen": "hamlet.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Macbeth",
+    "descripcion": "Macbeth es una tragedia de William Shakespeare que sigue la ambición desenfrenada y la caída del personaje titular. Es una de las obras más oscuras del autor.",
+    "precio": 4800,
+    "autor": "William Shakespeare",
+    "imagen": "macbeth.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "El Fantasma de la Ópera",
+    "descripcion": "El Fantasma de la Ópera es un musical basado en la novela de Gaston Leroux. La historia gira en torno a un misterioso hombre desfigurado que vive en la ópera de París.",
+    "precio": 5500,
+    "compositor": "Andrew Lloyd Webber",
+    "imagen": "phantomoftheopera.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "A Midsummer Night's Dream",
+    "descripcion": "A Midsummer Night's Dream es una comedia de William Shakespeare que involucra enredos amorosos y eventos mágicos. Es una de las obras más encantadoras del autor.",
+    "precio": 4200,
+    "autor": "William Shakespeare",
+    "imagen": "midsummernightsdream.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Les Liaisons Dangereuses",
+    "descripcion": "Les Liaisons Dangereuses es una obra de teatro basada en la novela epistolar del siglo XVIII. Explora las intrigas y manipulaciones en la alta sociedad francesa.",
+    "precio": 5000,
+    "autor": "Christopher Hampton",
+    "imagen": "lesliaisonsdangereuses.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "The Importance of Being Earnest",
+    "descripcion": "The Importance of Being Earnest es una comedia satírica de Oscar Wilde. Aborda la hipocresía de la sociedad victoriana de una manera ingeniosa y humorística.",
+    "precio": 4800,
+    "autor": "Oscar Wilde",
+    "imagen": "importanceofbeingearnest.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Cats",
+    "descripcion": "Cats es un musical compuesto por Andrew Lloyd Webber. Basado en el libro Old Possum's Book of Practical Cats de T.S. Eliot, es conocido por sus elaborados números de baile.",
+    "precio": 5200,
+    "compositor": "Andrew Lloyd Webber",
+    "imagen": "cats.jpg"
+  },
+  {
+    "tipo": "Teatro",
+    "nombre": "Death of a Salesman",
+    "descripcion": "Death of a Salesman es una obra de teatro de Arthur Miller. Explora temas de sueños rotos y la naturaleza del éxito en la sociedad estadounidense.",
+    "precio": 4700,
+    "autor": "Arthur Miller",
+    "imagen": "deathofasalesman.jpg"
   }
 ]

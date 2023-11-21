@@ -25,7 +25,7 @@
     // Función para mostrar los recitales en pantalla
     function mostrarEvento(tipo) {
         const recitalesContainer = document.getElementById('recitales-container');
-
+        const brElement = document.createElement('br');
         eventos.forEach(evento => {
             if (evento.constructor.name===tipo) {
                 const recitalElement = document.createElement('div');
@@ -33,7 +33,10 @@
                 
                 recitalElement.innerHTML = evento.mostrarHTML();
                 
+                
                 recitalesContainer.appendChild(recitalElement);
+                recitalesContainer.appendChild(brElement);
+
             }            
 
         });
