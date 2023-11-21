@@ -32,10 +32,10 @@
                 evento.className = 'container-card';
                 
                 recitalElement.innerHTML = evento.mostrarHTML();
-                
-                
                 recitalesContainer.appendChild(recitalElement);
-                recitalesContainer.appendChild(brElement);
+                
+                
+                
 
             }            
 
