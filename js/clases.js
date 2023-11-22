@@ -91,16 +91,25 @@ class Persona {
 }
 
 class Usuario extends Persona {
-    #user;#password;#mail;
-    constructor(p_nombre, p_apellido,p_user, p_password,p_mail) {
+    #user;#password;#mail;#foto;
+    constructor(p_nombre, p_apellido,p_user, p_password,p_mail,p_foto) {
         super(p_nombre,p_apellido);
         this.#user = p_user;
         this.#password = p_password;
         this.#mail=p_mail;
+        this.#foto=p_foto;
     }
 
     get nombreUsuario() {
         return this.#user;
+    }
+
+    get foto() {
+        return this.#foto;
+    }
+
+    get email() {
+        return this.#mail;
     }
 
     set nombreUsuario(nuevoNombre) {

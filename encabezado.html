@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentaTickets.com.ar</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script languaje="javascript">
+        function Salir(){
+            localStorage.setItem("usuarioLogueado", "");
+            parent.location.href="index.html";
+
+
+        }
+
+    </script>
 
 
 </head>
@@ -22,7 +31,8 @@
                 <li><a href="cine.html" target="_top">Cine</a></li>
            </ul>            
         </nav>
-        <a class="btn" href="#"><button>Contacto</button></a>
+
+        <a class="btn" href="#" onclick="Salir()"><button>Salir</button></a>
 
         
     </header>

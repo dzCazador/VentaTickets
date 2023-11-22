@@ -38,6 +38,7 @@
         });
     }
 
+    // Registro de Usuarios
     function loginUsuario(){
         event.preventDefault();
         const nombreUsuario = document.getElementById("login").value;
@@ -58,8 +59,17 @@
         }
     }
 
-
+    // Comprar Ticket
     function ComprarTicket(idEvento){
+
+        if (localStorage.getItem("usuarioLogueado")=="") {
+            event.preventDefault();
+            alert("Debe Loguearse previamente.")
+            location.href="index.html";
+            return;
+        }
+
+
         eventoSeleccionado =eventos.find((evento) => evento.id==idEvento);
         document.getElementById("evento").value=eventoSeleccionado.nombre;
         document.getElementById("cantidadEntradas").value=1;
@@ -68,25 +78,22 @@
         document.getElementById("precioTotal").value='Total: '+ eventoSeleccionado.precio;;
 
     }
-
+    // Modificar la Cantidad de Ticket
     function ModificaCantidad(){
         var total =  document.getElementById("precioEventoHidden").value *document.getElementById("cantidadEntradas").value;
-        document.getElementById("precioTotal").value='Total: '+ total;;
+        document.getElementById("precioTotal").value='Total: '+ total;
+    }
+    
+    // Finalizar la Compra
+    function FinalizarCompra(){
+        usuarioLogueado =listaUsuarios.find((usuario) => usuario.nombreUsuario==localStorage.getItem("usuarioLogueado"));
+        ubicacionTexto = document.getElementById("textoFin");
+        ubicacionTexto.innerHTML= "La compra de la Entrada para <b><i>"+document.getElementById("evento").value+" </b></i>se ha realizado con exito.\n"+
+                                  "Se le ha enviado su ticket en  PDF a su mail: <b><i>"+usuarioLogueado.email;
     }
 
-    function FinalizarCompra(idEvento){
-        eventoSeleccionado =eventos.find((evento) => evento.id==idEvento);
-        document.getElementById("evento").value=eventoSeleccionado.nombre;
-        document.getElementById("cantidadEntradas").value=1;
-        document.getElementById("precioUnitario").value='Precio: '+ eventoSeleccionado.precio;
-        document.getElementById("precioEventoHidden").value=eventoSeleccionado.precio;
-        document.getElementById("precioTotal").value='Total: '+ eventoSeleccionado.precio;;
-
-    }
-
-
+    // Crea el elemento modal de Comprar Ticket
     function crearModal() {
-        // Crea el elemento modal
         const modal = document.createElement("div");
         modal.classList.add("modal");
         modal.setAttribute("id", "ModalCompra");
@@ -107,7 +114,7 @@
                            "</div>"+
                            "<div class='modal-footer'>"+
                            "<button type='button' class='btn btn-secondary' data-dismiss='modal' onclick='cerrarModal()'>Cancelar</button>"+
-                           "<button type='button' class='btn btn-primary' data-bs-target='#ModalFinalizar' data-bs-toggle='modal'>Confirmar</button>"+
+                           "<button type='button' class='btn btn-primary' data-bs-target='#ModalFinalizar' data-bs-toggle='modal' onclick='FinalizarCompra()'>Confirmar</button>"+
                            "</div>"+
                            "</div>";
         modal.appendChild(dialog);
@@ -115,7 +122,8 @@
         document.body.appendChild(modal);
       }
 
-      function crearModaFinalizar() {
+      // Crea el elemento modal de Finalizar Comprar
+      function crearModalFinalizar() {
         // Crea el elemento modal
         const modal = document.createElement("div");
         modal.classList.add("modal");
@@ -128,8 +136,7 @@
                            "<div class='modal-header'>"+
                            "<h4 class='modal-title'>Compra Realizada</h4>"+
                            "</div>"+
-                           "<div class='modal-body'>"+
-                           "La compra de la Entrada para RECITAL se ha realizado con exito. Se le ha enviado via PDF a su mail MAIL@MAIL>"+
+                           "<div class='modal-body' id='textoFin'>"+
                            "</div>"+
                            "<div class='modal-footer'>"+
                            "<button type='submit' class='btn btn-primary' data-bs-dismiss='modal'>Aceptar</button>"+
@@ -154,6 +161,6 @@
       
       document.addEventListener("DOMContentLoaded", function () {
         crearModal();
-        crearModaFinalizar();
+        crearModalFinalizar();
         cargarEventos();
       });
